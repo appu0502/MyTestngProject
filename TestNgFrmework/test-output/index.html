@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TESTNG_Learning">
+              <span class="suite-name border-failed">TESTNG Learning</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TESTNG_Learning">
+                    <span>F:\Java\JavaWorkSpace\TestNgFrmework\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TESTNG_Learning">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TESTNG_Learning">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TESTNG_Learning">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TESTNG_Learning">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TESTNG_Learning">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TESTNG_Learning">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,  1 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="hide-methods failed suite-TESTNG_Learning"> (hide)</a> <!-- hide-methods failed suite-TESTNG_Learning -->
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="show-methods failed suite-TESTNG_Learning"> (show)</a> <!-- show-methods failed suite-TESTNG_Learning -->
+                    </span>
+                    <div class="method-list-content failed suite-TESTNG_Learning">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.ExceptionTimeoutTest" hash-for-method="infiniteLoopTest">infiniteLoopTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.DependancyTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TESTNG_Learning -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="hide-methods skipped suite-TESTNG_Learning"> (hide)</a> <!-- hide-methods skipped suite-TESTNG_Learning -->
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="show-methods skipped suite-TESTNG_Learning"> (show)</a> <!-- show-methods skipped suite-TESTNG_Learning -->
+                    </span>
+                    <div class="method-list-content skipped suite-TESTNG_Learning">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.DependancyTest" hash-for-method="homePageTest">homePageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TESTNG_Learning -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="hide-methods passed suite-TESTNG_Learning"> (hide)</a> <!-- hide-methods passed suite-TESTNG_Learning -->
+                      <a href="#" panel-name="suite-TESTNG_Learning" class="show-methods passed suite-TESTNG_Learning"> (show)</a> <!-- show-methods passed suite-TESTNG_Learning -->
+                    </span>
+                    <div class="method-list-content passed suite-TESTNG_Learning">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.DependancyTest" hash-for-method="dummyTest">dummyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.Priority_Groups" hash-for-method="googleTitle">googleTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.AssertionTest" hash-for-method="googleTitle">googleTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.InvocationTest" hash-for-method="test">test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.Priority_Groups" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.Priority_Groups" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.Priority_Groups" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TESTNG_Learning" title="com.testsuite.Priority_Groups" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TESTNG_Learning -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TESTNG_Learning" class="panel TESTNG_Learning">
+          <div class="suite-TESTNG_Learning-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testsuite.DependancyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.ArithmeticException: / by zero
+	at com.testsuite.DependancyTest.loginTest(DependancyTest.java:8)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-failed -->
+          <div class="suite-TESTNG_Learning-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testsuite.ExceptionTimeoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="infiniteLoopTest">
+                  </a> <!-- infiniteLoopTest -->
+                  <span class="method-name">infiniteLoopTest</span>
+                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.infiniteLoopTest() didn&apos;t finish within the time-out 1000
+	at java.nio.CharBuffer.wrap(CharBuffer.java:373)
+	at sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:265)
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
+	at java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
+	at java.io.PrintStream.newLine(PrintStream.java:545)
+	at java.io.PrintStream.println(PrintStream.java:737)
+	at com.testsuite.ExceptionTimeoutTest.infiniteLoopTest(ExceptionTimeoutTest.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:40)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-failed -->
+          <div class="suite-TESTNG_Learning-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testsuite.DependancyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageTest">
+                  </a> <!-- homePageTest -->
+                  <span class="method-name">homePageTest</span>
+                  <div class="stack-trace">java.lang.Throwable: Method DependancyTest.homePageTest()[pri:0, instance:com.testsuite.DependancyTest@39c0f4a] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1040)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-skipped -->
+          <div class="suite-TESTNG_Learning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testsuite.InvocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-passed -->
+          <div class="suite-TESTNG_Learning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testsuite.DependancyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dummyTest">
+                  </a> <!-- dummyTest -->
+                  <span class="method-name">dummyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-passed -->
+          <div class="suite-TESTNG_Learning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testsuite.AssertionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitle">
+                  </a> <!-- googleTitle -->
+                  <span class="method-name">googleTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-passed -->
+          <div class="suite-TESTNG_Learning-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testsuite.Priority_Groups</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="googleTitle">
+                  </a> <!-- googleTitle -->
+                  <span class="method-name">googleTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TESTNG_Learning-class-passed -->
+        </div> <!-- panel TESTNG_Learning -->
+        <div panel-name="test-xml-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Java\JavaWorkSpace\TestNgFrmework\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot; name=&quot;TESTNG Learning&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.extentreportlistener.ExtentReportListner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Testng Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testsuite.Priority_Groups&quot;/&gt;
+      &lt;class name=&quot;com.testsuite.InvocationTest&quot;/&gt;
+      &lt;class name=&quot;com.testsuite.AssertionTest&quot;/&gt;
+      &lt;class name=&quot;com.testsuite.ExceptionTimeoutTest&quot;/&gt;
+      &lt;class name=&quot;com.testsuite.DependancyTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testng Tests --&gt;
+&lt;/suite&gt; &lt;!-- TESTNG Learning --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TESTNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Testng Tests (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TESTNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">googleTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">test1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">test3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TESTNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TESTNG_Learning');
+function tableData_TESTNG_Learning() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dummyTest')
+data.setCell(0, 2, 'com.testsuite.DependancyTest')
+data.setCell(0, 3, 1671);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'infiniteLoopTest')
+data.setCell(1, 2, 'com.testsuite.ExceptionTimeoutTest')
+data.setCell(1, 3, 1289);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'googleTitle')
+data.setCell(2, 2, 'com.testsuite.AssertionTest')
+data.setCell(2, 3, 471);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'googleTitle')
+data.setCell(3, 2, 'com.testsuite.Priority_Groups')
+data.setCell(3, 3, 55);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginTest')
+data.setCell(4, 2, 'com.testsuite.DependancyTest')
+data.setCell(4, 3, 36);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test3')
+data.setCell(5, 2, 'com.testsuite.Priority_Groups')
+data.setCell(5, 3, 9);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test1')
+data.setCell(6, 2, 'com.testsuite.Priority_Groups')
+data.setCell(6, 3, 6);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test')
+data.setCell(7, 2, 'com.testsuite.InvocationTest')
+data.setCell(7, 3, 6);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test2')
+data.setCell(8, 2, 'com.testsuite.Priority_Groups')
+data.setCell(8, 3, 5);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test4')
+data.setCell(9, 2, 'com.testsuite.Priority_Groups')
+data.setCell(9, 3, 4);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'homePageTest')
+data.setCell(10, 2, 'com.testsuite.DependancyTest')
+data.setCell(10, 3, 1);
+window.suiteTableData['TESTNG_Learning']= { tableData: data, tableDiv: 'times-div-TESTNG_Learning'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <div id="times-div-TESTNG_Learning">
+              </div> <!-- times-div-TESTNG_Learning -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TESTNG Learning</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TESTNG_Learning" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testsuite.Priority_Groups</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">googleTitle</span>
+                <span class="method-start">73188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">73246 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">74416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">100216 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">101022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">120256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">120280 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">121083 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">137658 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">137703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">138514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">156682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">156690 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testsuite.InvocationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test</span>
+                <span class="method-start">157470 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testsuite.AssertionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">157527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">googleTitle</span>
+                <span class="method-start">175448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">175924 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testsuite.ExceptionTimeoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">infiniteLoopTest</span>
+                <span class="method-start">176664 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testsuite.DependancyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">177962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dummyTest</span>
+                <span class="method-start">178001 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

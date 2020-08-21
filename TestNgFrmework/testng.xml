@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TESTNG Learning" verbose="2">
+	<listeners>
+		<listener
+			class-name="com.extentreportlistener.ExtentReportListner" />
+	</listeners>
+	<test name="Testng Tests">
+		<classes>
+			<class name="com.testsuite.Priority_Groups" />
+			<class name="com.testsuite.InvocationTest" />
+			<class name="com.testsuite.AssertionTest" />
+			<class name="com.testsuite.ExceptionTimeoutTest" />
+			<class name="com.testsuite.DependancyTest" />
+
+			<!--<class name="com.testsuite.VerboseTest"></class> -->
+
+		</classes>
+	</test>
+</suite> 

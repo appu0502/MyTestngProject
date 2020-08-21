@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="TESTNG Learning" verbose="2">
+  <test name="Testng Tests">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="url" value="https://freecrm.co.in/"></parameter>
+  <parameter name ="email" value ="appu.cs02@gmail.com"></parameter>
+  <parameter name="password" value="Appu@502"></parameter>
+    <classes>
+  <!-- 		<class name="com.testsuite.Priority_Groups"</class>
+  		<class name="com.testsuite.InvocationTest"</class>
+  		<class name="com.testsuite.AssertionTest"</class>
+  		<class name="com.testsuite.ExceptionTimeoutTest"</class>
+  		<class name="com.testsuite.DependancyTest"</class> -->
+  		
+  		<class name="com.testsuite.ParametersInTestng"></class> 		
+    </classes>
+  </test> 
+</suite> 
